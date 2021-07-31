@@ -1,0 +1,773 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+main {
+  overflow: hidden;
+}
+
+/* HEADER SECTION */
+
+header {
+  overflow: hidden;
+  position: sticky;
+  top: 0;
+  bottom: 0;
+  z-index: 5;
+  
+}
+
+#top-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 11vh;
+  background-color: rgb(255, 255, 0);
+  width: 100%;
+  font-size: 0.9rem;
+  font-family: "Baloo Bhai 2", cursive;
+  overflow: hidden;
+}
+#top-header .phone {
+  margin: 0px 30px;
+}
+#main-header {
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  overflow: hidden;
+  
+}
+.logo {
+  margin: 10px 0px 10px 40px;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding: 33px 71px;
+  font-weight: bold;
+  font-family: "Baloo Bhai 2", cursive;
+}
+
+nav ul li a {
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  color: white;
+  margin: 10px 20px;
+}
+.btn {
+  display: flex;
+}
+.btn button {
+  height: 6vh;
+  width: 5vw;
+  margin: 28px 12px 18px 17px;
+  border: 2px solid yellow;
+  color: Yellow;
+  background-color: black;
+  font-weight: bold;
+}
+.btn button:hover {
+  background-color: yellow;
+  color: Black;
+}
+
+/* Main Section */
+
+#container {
+  width: 100%;
+  height: 151vh;
+  overflow: hidden;
+}
+
+.down {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+  font-size: 1.3rem;
+  font-family: "Baloo Bhai 2", cursive;
+}
+.down p {
+  color: rgb(255, 123, 0);
+  font-size: 2rem;
+}
+
+.card {
+  display: flex;
+}
+.card-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-family: "Baloo Bhai 2", cursive;
+}
+
+.card-item img {
+  width: 11vw;
+  height: 26vh;
+  margin: 74px 36px 10px 36px;
+}
+
+/* Container 1 Section */
+#container1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  height: 56vh;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  overflow: hidden;
+}
+#container1::before {
+  content: "";
+  width: 100%;
+  height: 56vh;
+  background: url("img10.jpg") no-repeat center center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+#container1 .app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 85px;
+}
+h2 {
+  color: Yellow;
+  font-size: 2rem;
+  margin: 23px 13px;
+  font-family: "Roboto", sans-serif;
+}
+
+p2 {
+  color: Yellow;
+  font-size: 1.3rem;
+}
+h2:hover,
+p2:hover {
+  background-color: black;
+  font-weight: bolder;
+}
+.client {
+  width: 100%;
+  height: 25vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 100px 65px;
+}
+.client img {
+  margin: 22px 40px;
+}
+
+#container1 .button button {
+  height: 7vh;
+  width: 20vw;
+  font-size: 1.6rem;
+  color: yellow;
+  font-family: "Roboto", sans-serif;
+  border: 2px solid yellow;
+  background-color: rgb(66, 56, 56);
+}
+#container1 .button button:hover {
+  background-color: yellow;
+  color: black;
+  font-weight: bolder;
+}
+#container2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80vh;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  overflow: hidden;
+}
+#container2::before {
+  content: "";
+  width: 100%;
+  height: 80vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url("img14.jpg") no-repeat center center/cover;
+
+  z-index: -1;
+}
+#container2 .offer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding: 30px 20px;
+}
+h3 {
+  color: Yellow;
+  font-size: 3.5rem;
+  margin: 23px 13px;
+  font-family: "Roboto", sans-serif;
+}
+h3:hover {
+  background-color: black;
+}
+.box1 {
+  margin: 0px 29px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.box2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.box3 {
+  margin: 0px 29px;
+  display: flex;
+}
+
+.box3 button {
+  height: 6vh;
+  width: 11vw;
+  font-weight: bold;
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: yellow;
+  border: 2px solid yellow;
+  background-color: black;
+  font-family: "Roboto", sans-serif;
+}
+.box3 button:hover {
+  background-color: yellow;
+  color: black;
+}
+
+/* Container 3 Section */
+
+#container3 {
+  width: 100%;
+  height: 85vh;
+  display: flex;
+  margin: 58px 10px;
+  background-color: #edf3b700;
+}
+#container3 .contact {
+  height: 40px;
+  margin: 0px 58px;
+
+  text-transform: capitalize;
+}
+.heading {
+  display: flex;
+  flex-direction: row;
+}
+h4 {
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: black;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 30px;
+}
+h5 {
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: yellow;
+  font-family: "Roboto", sans-serif;
+  
+}
+.items input {
+  width: 33vw;
+  height: 5vh;
+  font-size: 1.2rem;
+  font-family: "Baloo Bhai 2", cursive;
+  border: 2px solid black;
+}
+.items input:hover {
+  cursor: pointer;
+  background-color: yellow;
+  color: black;
+}
+.batton button {
+  height: 5vh;
+  width: 10vw;
+  font: 1rem;
+  font-weight: bold;
+  color: yellow;
+  text-transform: uppercase;
+  background-color: black;
+  border: 2px solid yellow;
+  font-family: "Roboto", sans-serif;
+}
+.batton button:hover {
+  background-color: yellow;
+  color: black;
+  text-transform: bolder;
+}
+.video {
+  margin: 36px 43px;
+  display: flex;
+  width: 50vw;
+  height: 50vh;
+}
+
+/* Container 4 section */
+
+#container4 {
+  width: 100%;
+  height: 60vh;
+  
+}
+ .heading {
+  display: flex;
+  justify-content: center;
+  margin-top: 64px;
+}
+.boxes{
+    display: flex;
+    justify-content: center;
+
+    
+}
+ .boxx {
+  width: 18vw;
+  height: 20vh;
+  border: 3px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  margin: 64px 26px;
+  font-family: "Baloo Bhai 2", cursive;
+}
+.boxx:hover{
+    background-color: wheat;
+    cursor: pointer;
+}
+
+/* Container 5 Section */
+
+#container5{
+    background: black;
+    height: 108vh;
+}
+#container5 h5{
+    padding-top: 43px;
+}
+p3{
+    font-size: 1.3rem;
+text-transform: uppercase;
+color: white;
+font-family: "Roboto", sans-serif;
+}
+.soon{
+    display: flex;
+}
+
+.caard{
+    /* border: 2px solid red; */
+    width: 45vw;
+    height: 50vh;
+    margin: 71px 23px;
+    display: flex;
+justify-content: center;
+align-items: center;
+padding: 0px 33px;
+font-family: "Roboto", sans-serif;
+}
+.caard img{
+    width: 40vw;
+    height: 80vh;
+    margin-top: 157px;
+}
+
+
+/* Container 6 Section */
+
+#container6{
+    width: 100%;
+    height: 195vh;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    
+}
+#container6::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 198vh;
+    background: url("img40.jpg") no-repeat center center/cover;
+    z-index: -1;
+
+}
+
+/* h6{
+    font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  font-family: "Roboto", sans-serif; */
+
+#container6 .hading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 53px;
+
+
+}
+  .boxer{
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+.boxer .image img{
+  width: 22vw;
+  height: 30vh;
+  padding: 33px 18px;
+
+}
+
+/* Container 7 Section */
+
+#container7{
+  width: 100%;
+  height: 115vh;
+
+}
+.event .boxer .image{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100vh;
+width: 24vw;
+margin: 5px 1px;
+/* border: 2px solid brown; */
+
+}
+.btne button {
+  height: 4vh;
+  width: 8vw;
+  margin: 6px 230px 0px 9px;
+  border: 2px solid yellow;
+  color: Yellow;
+  background-color: black;
+  font-weight: bold;
+ 
+}
+.btne button:hover {
+  background-color: yellow;
+  color: Black;
+}
+
+.boxer .image h1{
+  font-weight: .8rem;
+  font-family: "Baloo Bhai 2", cursive;
+  background-color: rgb(245, 245, 248);
+  padding: 13px 0px;
+margin: 19px 0px;
+
+}
+
+/* Container * Section */
+
+#container8{
+  width: 100%;
+  height: 130vh;
+  position: relative;
+  z-index: 1;
+  padding: 67px 67px 0px 19px;
+}
+#container8::before{
+  content: "";
+  width: 100%;
+  height: 130vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url("img42.jpg") no-repeat center center/cover;
+  z-index: -1;
+  /* opacity: .2; */
+}
+h7{
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  color: white;
+  margin-top: 25px;
+  margin: 20px;
+
+}
+
+.blog{
+  display: flex;
+  
+}
+.boxess{
+  display: flex;
+  height: 69vh;
+width: 27vw;
+/* border: 2px solid brown; */
+margin: 4px 17px;
+padding: 42px 21px;
+}
+
+.boxess .yellow{
+  height: 13vh;
+  width: 5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  background-color:yellow;
+  font-weight: bold;
+
+}
+.content{
+  display: flex;
+  flex-direction: column;
+  width: 21vw;
+padding: 8px;
+}
+
+h8{
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  color: white;
+  padding: 11px;
+}
+p4{
+  font-family: "Baloo Bhai 2", cursive;
+  color: white;
+}
+#link{
+  text-decoration: none;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  margin: 43px 0px;
+}
+
+
+/* Client Section */
+
+
+#client-section {
+  position: relative;
+  padding-bottom: 50px;
+}
+#client-section::before {
+  content: "";
+  position: absolute;
+  background: url("img12.webp") no-repeat center center/cover;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.6;
+}
+
+#clients {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#client-item {
+  padding: 34px;
+}
+
+#clients img {
+  height: 124px;
+  padding: 2px 30px;
+}
+.h-primary {
+  font-size: 3.4rem;
+  padding-bottom: 49px;
+  display: flex;
+  justify-content: center;
+
+  font-family: "Baloo Bhai 2", cursive;
+}
+
+/* Container 9 section */
+
+#container9{
+  width: 100%;
+  height: 170vh;
+  position: relative;
+  margin-top: 48px;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+#container9::before{
+  content: "";
+  
+  width: 100%;
+  height: 170vh;
+  position: absolute;
+  background: url("img52.jpg") no-repeat center center/cover;
+  top: 0;
+  left: 0;
+  z-index: -1;
+
+}
+.gallery{
+  display: flex;
+  padding: 150px 21px;
+}
+.boox1{
+  height: 90vh;
+  width: 32vw;
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  flex-direction: column;
+  margin: 70px 0px;
+  
+
+}
+.boxe{
+  display: flex;
+  flex-direction: row;
+}
+.boxe1{
+  padding: 0px 15px;
+}
+.boxe2{
+  padding: 6px 33px;
+}
+.boox2{
+  height: 90vh;
+  width: 32vw;
+  /* border: 2px solid red; */
+  margin: 70px 0px;
+}
+.boox1 h5{
+  display: flex;
+  justify-content:flex-start;
+  align-items: center;
+  margin: 18px 0 17px 7px;
+}
+.boox2 h5{
+  display: flex;
+  justify-content:flex-start;
+  align-items: center;
+  margin: 127px 0 17px 7px;
+  
+}
+.boox3 h5{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 127px 0 17px 7px;
+}
+.boox2 p4{
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 22px 0;
+  margin: 17px 13px;
+display: flex;
+justify-content: center;
+}
+#special{
+  height: 6vh;
+width: 19vw;
+margin: 21px 14px;
+background: black;
+border-right: 54px solid white;
+/* border: 2px solid white; */
+color: white;
+padding: 7px;
+font-weight: bold;
+text-transform: capitalize;
+font-size: 1rem;
+}
+
+.boox3{
+  height: 90vh;
+  width: 32vw;
+  /* border: 2px solid red; */
+  margin: 70px 0px;
+  
+}
+.boox3 p4{
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 4px 10px;
+display: flex;
+justify-content: center;
+}
+.side{
+  display: flex;
+  
+}
+
+
+/* Footer Section */
+
+footer{
+  height: 12vh;
+  width: 100%;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+}
+.footer{
+  height: 12vh;
+  width: 100%;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  font-family: "Baloo Bhai 2", cursive;
+}
+.terms  a{
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  /* margin: 10px 400px; */
+}
+
+
+
